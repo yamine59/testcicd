@@ -9,10 +9,13 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-  ],
+  
+  ], 
+  base: '/02/02/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
 })
+
